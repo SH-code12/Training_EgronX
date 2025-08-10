@@ -49,7 +49,7 @@
 
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/708b7171-2b58-4e8d-9e9d-02b63a89b270" />
 
-32. Open Nginx on [localhost:9090]
+3. Open Nginx on [localhost:9090]
 
     <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6b37f226-8b40-4c5e-ba2a-b37e97fac5c5" />
 
