@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+.env
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# Byte-compiled / cache
+*.py[cod]
+*$py.class
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+.docker/
+.dockerignore
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Temporary files
+tmp/
+*.tmp
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Nginx cache
+nginx/cache/
+
+# unneeded Directory 
+
+/home/shahd/Egronx/Images
