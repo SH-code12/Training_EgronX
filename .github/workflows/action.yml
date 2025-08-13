@@ -1,0 +1,30 @@
+name: Run Password Generator Container
+
+on:
+  workflow_dispatch: # Trigger manually
+  push:
+    branches:
+      - main
+
+jobs:
+  run-container:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+
+      - name: Pull Docker image
+        run: docker pull shahdelnassag/passwordgenerator:v1.0
+
+      - name: Run container
+        run: docker run -d -p 8080:8080 --name password-generator shahdelnassag/passwordgenerator:v1.0
+
+      - name: Show running containers
+        run: docker ps -a

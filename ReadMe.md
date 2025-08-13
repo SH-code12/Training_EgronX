@@ -141,11 +141,15 @@
 ```
 - Show Status
 
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6640af8a-42a0-4f10-a62d-0e654d8ba892" />
+    <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6640af8a-42a0-4f10-a62d-0e654d8ba892" />
 
 - Build Pipeline
 
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/c57f9052-2474-44ff-a050-ff5246a27494" />
+    <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/c57f9052-2474-44ff-a050-ff5246a27494" />
+
+- Image Created By Jenkins
+
+    <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/50e49d9d-f992-407a-bb6c-1f7e93ce2703" />
 
 - Stop Jenkins
 ```
