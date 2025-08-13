@@ -24,7 +24,7 @@ jobs:
         run: docker pull shahdelnassag/passwordgenerator:v1.0
 
       - name: Run container
-        run: docker run -d -p 8080:8080 --name password-generator shahdelnassag/passwordgenerator:v1.0
+        run: docker run -d -p 5050:5050 --name password-generator shahdelnassag/passwordgenerator:v1.0
 
       - name: Show running containers
         run: docker ps -a
