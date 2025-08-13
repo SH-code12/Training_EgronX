@@ -15,6 +15,8 @@
 
 - [Jenkins](#jenkins)
 
+- [GitHub Actions](#gitHub-actions)
+
 ## Task 1 
 | Install Unbuntu and Docker
 - Clik For Ubuntu [Install Ubuntu](https://www.youtube.com/watch?v=mXyN1aJYefc)
@@ -157,3 +159,7 @@
 ```
     sudo systemctl stop jenkins
 ```
+
+## GitHub Actions
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/1dff1bab-33b4-46a8-9124-9e9f20044668" />
