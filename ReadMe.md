@@ -11,6 +11,8 @@
 
 - [Docker](#docker)
 
+- [Install Jenkins](#install-jenkins)
+
 ## Task 1 
 | Install Unbuntu and Docker
 - Clik For Ubuntu [Install Ubuntu](https://www.youtube.com/watch?v=mXyN1aJYefc)
@@ -92,3 +94,46 @@
 ```
 
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6efe89b6-f046-473a-9615-a2ac99b96171" />
+
+## Install Jenkins
+```
+# Update
+    sudo apt update
+
+# install java 
+    sudo apt install openjdk-17-jdk -y
+
+# check verstion
+    java -version
+
+#Add the Jenkins repository key and source
+    curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+
+    echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+# install jenkins 
+    sudo apt update
+    sudo apt install jenkins -y
+
+# Enable Jenkins
+    sudo systemctl enable jenkins
+
+# Start Jenkins
+    sudo systemctl start jenkins
+
+# Check Status
+    sudo systemctl status jenkins
+
+## Get admin password
+    sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
+# Open it
+    localhost:8080/
+
+```
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6640af8a-42a0-4f10-a62d-0e654d8ba892" />
