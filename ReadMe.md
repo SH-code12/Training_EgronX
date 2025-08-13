@@ -11,7 +11,7 @@
 
 - [Docker](#docker)
 
-- [Install Jenkins](#install-jenkins)
+- [Jenkins](#jenkins)
 
 ## Task 1 
 | Install Unbuntu and Docker
@@ -95,7 +95,8 @@
 
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6efe89b6-f046-473a-9615-a2ac99b96171" />
 
-## Install Jenkins
+## Jenkins
+
 ```
 # Update
     sudo apt update
@@ -135,6 +136,18 @@
 # Open it
     localhost:8080/
 
+
+
 ```
+- Show Status
 
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6640af8a-42a0-4f10-a62d-0e654d8ba892" />
+
+- Build Pipeline
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/c57f9052-2474-44ff-a050-ff5246a27494" />
+
+- Stop Jenkins
+```
+    sudo systemctl stop jenkins
+```
