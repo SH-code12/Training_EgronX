@@ -1,6 +1,6 @@
-[![Run Password Generator Container](https://github.com/SH-code12/Training_EgronX/actions/workflows/action.yml/badge.svg)](https://github.com/SH-code12/Training_EgronX/actions/workflows/action.yml)
-
 # Training EgronX (DevOps Role)
+
+[![Run Password Generator Container](https://github.com/SH-code12/Training_EgronX/actions/workflows/action.yaml/badge.svg)](https://github.com/SH-code12/Training_EgronX/actions/workflows/action.yaml)
 
 ## Password Generator
 |A simple web application genetate paswords using flask
