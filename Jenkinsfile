@@ -18,8 +18,10 @@ pipeline {
         }
         stage('Run Docker container') {
             steps {
+                // Stop and remove any existing container first
                 sh 'docker stop jenkins-con || true'
                 sh 'docker rm jenkins-con || true'
+                // Run the container
                 sh 'docker run -d --name jenkins-con -p 5050:90 shahdelnassag/jenkins-training'
             }
         }
@@ -32,6 +34,13 @@ pipeline {
                 }
             }
         }
+    }
 
+    post {
+        always {
+            // Stop and remove the container after pipeline finishes
+            sh 'docker stop jenkins-con || true'
+            sh 'docker rm jenkins-con || true'
+        }
     }
 }
