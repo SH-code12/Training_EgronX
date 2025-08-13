@@ -1,11 +1,15 @@
 # Training EgronX (DevOps Role)
 
+## Password Generator
+|A simple web application genetate paswords using flask
+
 ## Table of content
 
 - [Task 1](#task-1)
 
 - [Task 2](#task-2)
 
+- [Docker](#docker)
 
 ## Task 1 
 | Install Unbuntu and Docker
@@ -29,7 +33,7 @@
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/3b1678af-bac0-4397-a6c2-ef8ba6c36eee" />
 
 ## Task 2
-| Run docker-compose(Multiple Contaniers) Nginx(WebServer) and MySQL(Web Server)
+| Run docker-compose(Multiple Contaniers) Make Nginx(WebServer) and MySQL(Web Server)
 
 1. Start services
 ```
@@ -61,3 +65,30 @@
 ```
     docker-compose down
 ```
+
+## Docker
+1. Build Image Using Docker
+```
+    docker build -t shahdelnassag/passwordgenerator:v1.0
+```
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/a58097a2-5ebc-4ca8-b162-a5ce539152ea" />
+
+2. Push Image on DockerHub
+
+| [Docker Hub Image](https://hub.docker.com/repository/docker/shahdelnassag/passwordgenerator/general)
+```
+    docker push shahdelnassag/passwordgenerator:v1.0
+```
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/77f8f1eb-bd59-4e62-82a3-c1e5fff2eb8a" />
+
+3. Run docker-compose 
+
+| Make Nginx Reverse Proxy For my app
+
+| Follow Link --> localhost:90/ , Nginx reverse to app
+
+```
+    docker-compose up -d
+```
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6efe89b6-f046-473a-9615-a2ac99b96171" />
