@@ -130,7 +130,8 @@
 ## Get admin password
     sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
-
+## Add Jenkins to group 
+    sudo usermod -aG docker jenkins
 # Open it
     localhost:8080/
 
